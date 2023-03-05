@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ex0519</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="ex0519.css">
+</head>
+<body>
+<header class="slideshow01">
+	<div class="myslides fade">
+		<div class="num">1 / 4</div>
+		<img src="images/sky01.jpg" style="width: 100%;">
+		<div class="mytext">Sky01</div>
+	</div>
+	<div class="myslides fade">
+		<div class="num">2 / 4</div>
+		<img src="images/sky02.jpg" style="width: 100%;">
+		<div class="mytext">Sky02</div>
+	</div>
+	<div class="myslides fade">
+		<div class="num">3 / 4</div>
+		<img src="images/sky03.jpg" style="width: 100%;">
+		<div class="mytext">Sky03</div>
+	</div>
+	<div class="myslides fade">
+		<div class="num">4 / 4</div>
+		<img src="images/sky04.jpg" style="width: 100%;">
+		<div class="mytext">Sky04</div>
+	</div>
+	<a class="prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></a>
+	<a class="next" onclick="plusSlides(1)"><i class="fas fa-angle-right"></i></a>	
+</header>
+<nav></nav>
+<section>
+	<div class="mydiv info">陣列練習</div>
+	<h1>喜歡吃的水果</h1>
+	<ul id="list"></ul>
+	<ul id="list2"></ul>
+</section>
+<section>
+	<div class="mydiv info">物件練習</div>
+	<h1>商品資訊</h1>
+	<table>
+		<tr>
+			<th>商品名稱</th>
+			<th>售價</th>
+			<th>數量</th>
+			<th>總額</th>
+		</tr>
+		<tr id="mytr"></tr>
+		<tr id="mytr2"></tr>
+	</table>
+</section>
+<section>
+	<div class="mydiv info">倒數計時器</div>
+	<p style="font-size: 30px;">距離端午節時間: <span id="timer"></span></p>
+</section>
+<section>
+	<div class="mydiv info">表單練習</div>
+	<div class="bg-img">
+		<form class="container">
+			<label for="mname">帳號</label>
+			<input type="text" id="mname" name="mname" required>
+			<label for="pass">密碼</label>
+			<input type="password" id="pass" required>
+			<input type="button" value="送出">
+		</form>
+	</div>
+</section>
+<section>
+	<div class="mydiv info">温度轉換</div>
+
+	<div class="alert" id="myalert">
+  		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  		請輸入正確的温度值.
+	</div>
+
+	<div class="myform">
+		<form>
+			<label for="c1">輸入攝氏温度</label>
+			<input type="text" id="c1" name="c1" required>
+			<label for="f1">華氏温度</label>
+			<input type="text" id="f1" name="f1" readonly>				
+			<input type="button" value="送出" onclick="ftemp()">
+		</form>		
+	</div>	
+</section>
+
+<footer></footer>
+
+<script src="ex0519.js"></script>
+</body>
+</html>

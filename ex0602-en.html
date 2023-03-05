@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>English</title>
+</head>
+<body>
+    <form id="myform">
+        <select name="select">
+            <option value="ex0602-en.html">English</option>
+            <option value="ex0602.html">Chinese</option>
+            
+        </select>
+    </form>
+
+    <h2>English Web</h2>
+
+    <section>
+        
+    </section>
+
+        <script>
+            $(function(){
+                // JS 寫法
+                // 取得Html的值
+                // let lang = document.querySelector('html').lang;
+                // document.getElementById('myform').select.onchange=()=>{
+                // location.href=document.getElementById('myform').select.value;
+                // }
+
+                //JQ寫法
+                let lang = $('html').lang;
+                document.getElementById('myform').select.onchange=()=>{
+                location.href=document.getElementById('myform').select.value;
+                }
+            });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>

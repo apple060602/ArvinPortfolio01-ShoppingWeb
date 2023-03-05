@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	max-width: 1000px;
+	margin:0 auto;
+	border:1px solid #333;
+}
+.slideshow01 {
+	position: relative;	
+}
+.myslides {
+	display: none;	
+}
+.fade {
+	animation-name: myfade;
+	animation-duration: 2s;
+}
+@keyframes myfade {
+	from {opacity: 0.4}
+	to {opacity: 1}
+}
+.num {
+	color: #f2f2f2;
+	font-size: 18px;
+	position: absolute;
+	top:0;
+	padding: 20px;
+}
+.mytext {
+	color: #f2f2f2;
+	font-size: 20px;
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+.prev, .next {
+	position: absolute;
+	top:50%;
+	font-size: 40px;
+	padding: 20px;
+	color:#fff;
+	margin-top:-40px;
+	cursor: pointer;
+}
+.next {
+	right:0;
+}
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.6);
+}
+
+section {
+	margin-bottom: 20px;
+	padding: 12px;
+}
+.mydiv {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 24px;
+}
+.info {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+}
+table, td, th {
+	border: 1px solid #ddd;
+	text-align: center;
+}
+table {
+	border-collapse: collapse;
+	width: 80%;
+}
+td,th {
+	padding: 15px;
+}
+.myform {
+	width: 80%;
+}
+input[type="text"], input[type="password"] {
+	width: 100%;
+	padding: 12px;
+	margin:10px 0;
+	border: none;
+  	background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;  
+  outline: none;
+}
+
+input[type="button"] {
+	width: 100%;
+	background-color: #009900;
+	padding: 16px 32px;
+	font-size: 18px;
+	border:none;
+	border-radius: 10px;
+	color: #fff;
+	margin: 10px 0;
+}
+input[type="button"]:hover {
+	background-color: #ff0066;
+}
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin: 15px 0;
+  display: none;
+  width:50%;
+  border-radius: 10px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  color: black;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("images/sky01.jpg");
+
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px;
+}

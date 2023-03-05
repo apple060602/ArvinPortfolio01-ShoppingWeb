@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shopping</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="ex0526.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+</head>	
+<body>
+
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="ex0526.html">
+    	<img src="images/heart-logo-png.png" style="width: 30px; height: 30px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="ex0526.html">首頁</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">關於公司</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">商品商城</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="job.html">人力資源</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">連絡我們</a>
+        </li>        
+      </ul>
+      <div class="ms-auto">
+      	<a href="#" class="btn btn-outline-success">登入</a>
+      	<a href="./0602_cart_購物車.html" class="btn btn-outline-success">購物車
+          <span class="badge bg-secondary">0</span></a>
+      	<a href="#" class="btn btn-outline-success">結帳</a>
+      </div>
+    </div>    
+  </div>
+</nav>
+</div>
+
+<section class="container">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>    
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://picsum.photos/1200/400?random=22" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block text-dark">
+        <h5>EVA</h5>
+        <p>產品好棒</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/1200/400?random=30" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>廠房</h5>
+        <p>廠房好大</p>
+      </div>
+    </div>    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>	
+</section>
+
+<section class="container mt-5">
+<h2>人力資源</h2>
+<div class="table-responsive">
+<table class="table table-striped table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">職務名稱</th>
+      <th scope="col">工作地區</th>
+      <th scope="col">工作內容</th>
+      <th scope="col">應徵</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">工程師</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td><a href="#" class="btn btn-secondary text-white">我要應徵</a></td>
+    </tr>
+    <tr>
+      <th scope="row">會計</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td><a href="#" class="btn btn-secondary text-white">我要應徵</a></td>
+    </tr>
+    <tr>
+      <th scope="row">作業員</th>
+      <td colspan="2">Larry the Bird</td>
+      <td><a href="#" class="btn btn-secondary text-white">我要應徵</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section class="container mt-5">
+<h2>待辦事項</h2>
+<div class="myDIV">
+<div class="input-group mb-3">
+  <input type="text" class="form-control" id="myInput">
+  <button class="btn btn-outline-secondary col-3" type="button" id="button-addon2" onclick="newElement()">
+  新增</button>
+</div>
+
+<ul id="myUL">
+  <li>Hit the gym<span class='close'>&times;</span></li>
+  <li class="checked">Pay bills</li>
+  <li>Meet George</li>
+  <li>Buy eggs</li>
+  <li>Read a book</li>
+  <li>Organize office</li>
+</ul>
+</div>
+
+</section>
+<footer class="container">
+<div class="bg-dark mt-5 p-3 mb-3">
+	<div class="row">
+		<div class="col-md-6">
+			<ul class="footer-menu">
+				<li><a href="ex0526.html">首頁</a></li>
+				<li><a href="about.html">關於公司</a></li>				
+				<li><a href="product.html">商品商城</a></li>
+				<li><a href="job.html">人力資源</a></li>
+				<li><a href="contact.html">連絡我們</a></li>
+			</ul>
+		</div>
+		<div class="col-md-6">
+		<form>
+			<div class="mb-3">
+				<label for="exampleInputEmail1" class="form-label text-white">
+				請留下Email, 我們會給您最新的消息:</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">				
+			</div>			
+			<button type="submit" class="btn btn-primary col-6">傳送</button>
+		</form>
+		</div>
+	</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+<script src="job.js"></script>
+</body>
+</html>
